@@ -1,3 +1,6 @@
+/*css do Mayk Brito*/
+
+/*removendo propriedades de todos os elementos - PASSO 3*/
 *{
     margin: 0;
     padding: 0;
@@ -7,30 +10,19 @@ a{
     text-decoration: none;
 }
 body{
+    /*imagem como estilo proprio*/
+    background-image: url(ilustracao-abstrata-da-placa-de-circuito-de-tecnologia-de-computador_257312-1351.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: 'Roboto', sans-serif;
 }
-.imgfundo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-.imgfundo img{
-    position: relative;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
+/*box model - PASSO 1*/
 .container{
     text-align: center;
     width: 300px;
-    margin: auto; 
-    padding-top: 50px;
-    padding-bottom: 15px;
-    position: relative;
+    margin: 60px auto; 
 }
-.imgperfil{
+img{
     width: 100%;
     border-radius: 50%;
     width: 110px;
@@ -66,12 +58,16 @@ ul li a{
 ul li a:hover{
     background: #9e9898;
 }
+#sitedeeh{
+    background-color: pink;
+}
 footer{
     font-weight: 500;
     font-size: 15px;
     color: #7c7878;
     opacity: 0.6;
     transition: opacity 400ms;
+    /*estilização abaixo da minha preferencia*/
     display: flex;
     justify-content: center;
 }
@@ -85,12 +81,96 @@ footer a{
     padding: 0 3px;
     color: #010009;
     opacity: 0.8;
+    /*meu estilo*/
     font-size: 15px;
 }
+/*alinhamento horizontal da caixa - PASSO 2
+    - margin: 60 auto; = cima e baixo / laterais
+
+redefinindo tamanho das caixas - PASSO 4
+    - box-sizing: border-box;
+    - ul e h1
+
+CSS display - PASSO 5
+    - botoes/links com display flex e align, justify center
+
+Cores - PASSO 6
+dica: https://cssgradient.io/
+    - a caixa de botoes, body, img
+
+Fontes e Textos - PASSO 7
+    - h1, a do footer, a dos links
+
+Hover e transitions
+    - nos botoes
+atualizando icones: https://getemoji.com/
+*/
 
 
-@media screen and (min-width: 300px) {
-  .container {
-    min-height: 500px;
-  }
+
+/*meu css ! 
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to top, #DD4C59, #F0F0F0);
+}
+.cabeçalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+.cabeçalho img{
+    border: 1px solid #F0F0F0;
+    border-radius: 100%;
+}
+.cabeçalho h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #DD4C59;
+    margin-top: 1%;
+}
+.links{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin-top: 1%;
+}
+.links ul{
+    list-style: none;
+}
+.links li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5%;
+    margin: 3%;
+    width: 15vw;
+    background: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    border-radius: 25px;
+}
+.links li a{
+    text-decoration: none;
+    color: #733641;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+footer i{
+    padding: 0 5px;
+}
+footer p{
+    padding: 0 6px;
+}
+footer p:hover{
+    color: #F0F0F0;
+    font-weight: bold;
 }
