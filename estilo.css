@@ -13,7 +13,7 @@ body{
     /*imagem como estilo proprio*/
     background-image: url(ilustracao-abstrata-da-placa-de-circuito-de-tecnologia-de-computador_257312-1351.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 150vh;
     font-family: 'Roboto', sans-serif;
 }
 /*box model - PASSO 1*/
